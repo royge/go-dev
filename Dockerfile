@@ -4,7 +4,7 @@ FROM ubuntu:latest
 # Author: Roy Evangelista
 MAINTAINER Roy Evangelista <royevangelista@gmail.com>
 
-# Install git
+# Install git and build-essential
 RUN apt-get -y update &&\
     apt-get -y install git build-essential
 
