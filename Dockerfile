@@ -6,7 +6,7 @@ MAINTAINER Roy Evangelista <royevangelista@gmail.com>
 
 # Install git
 RUN apt-get -y update && \
-    apt-get -y install git
+    apt-get -y install git build-essential
 
 # Clone official Go repo
 RUN git clone https://go.googlesource.com/go
