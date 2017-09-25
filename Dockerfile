@@ -25,5 +25,8 @@ RUN cd go1.4/ &&\
 # Build go using go 1.4
 RUN cd /root/go/src/ && ./all.bash
 
+# Remove go 1.4
+RUN rm -rf /root/go1.4/
+
 # Use bash shell as default entrypoint
 ENTRYPOINT /bin/bash
